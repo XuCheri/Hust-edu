@@ -136,7 +136,22 @@ a {
     height: 100%;
 }
 
-.wrap .btn {
+.wrap .btn .leftBtn {
+    top: 50%;
+    width: 30px;
+    height: 22px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    opacity: 0.1;
+    text-align: center;
+    margin-top: -30px;
+    font-size: 20px;
+    transform: scaleY(2.5);
+    line-height: 20px;
+    cursor: pointer;
+}
+.wrap .btn .rightBtn {
     top: 50%;
     width: 30px;
     height: 22px;
@@ -152,15 +167,18 @@ a {
     cursor: pointer;
 }
 
-.wrap .btn:hover {
+.wrap .btn .leftBtn:hover {
+    opacity: 0.7;
+}
+.wrap .btn .rightBtn:hover {
     opacity: 0.7;
 }
 
-.wrap .rightBtn {
+.wrap .btn .rightBtn {
     right: 0px;
 }
 
-.wrap .sliderIndex {
+.wrap .circle {
     position: absolute;
     width: 130px;
     bottom: 15px;
@@ -168,7 +186,7 @@ a {
     text-align: center;
 }
 
-.wrap .sliderIndex span {
+.wrap .circle span {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -178,7 +196,7 @@ a {
     cursor: pointer;
 }
 
-.wrap .sliderIndex .active {
+.wrap .circle .active {
     background-color: #fff;
 }
 
