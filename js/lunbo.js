@@ -1,7 +1,7 @@
 /*
  * @Author: XuCheri
  * @Date: 2021-04-02 23:23:47
- * @LastEditTime: 2021-04-02 23:34:30
+ * @LastEditTime: 2021-04-03 00:13:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Hust-edu\js\demo1.js
@@ -26,7 +26,6 @@ var oSpanArray = document.getElementsByClassName('circle')[0].getElementsByTagNa
             boxWidth = wrap.offsetWidth, //一个轮播图的宽
             canclick = true; //是否能进行下次点击，能（true），不能（false）
         timer = null;
-        console.log(wrap)
         //初始化
         ul.innerHTML += ul.innerHTML;
         var len = ul.children.length; //子元素的数量

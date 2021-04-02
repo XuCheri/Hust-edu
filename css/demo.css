@@ -87,8 +87,11 @@ a {
     margin-top: 13px;
 
 }
-
-#header .nav ul li a {
+#header .nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+#header .nav ul li{
     display: inline-block;
     color: #fff;
     font-size: 16px;
@@ -96,8 +99,29 @@ a {
     height: 50px;
     line-height: 50px;
 }
+#header .nav ul li ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1000;
+    left: -25px;
+    top: 47px;
+    display: none;
+    /* height: 100px; */
+}
+#header .nav ul li ul li{
+    width: 166px;
+    height:45px;
+    color: #fff;
+    background-color: rgba(98,12,13,.7);
+    padding: 5px 15px;
+    margin: 0px;
+}
+#header .nav ul li ul li:hover{
+    color: rgb(98,12,13);
+    background-color: rgba(255,255,255,.7);
 
-
+}
 
 
 
