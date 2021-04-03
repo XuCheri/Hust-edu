@@ -842,3 +842,29 @@ a {
     margin-top: 12px;
     margin-right: 4px;
 }
+
+.link2 div ul{
+    position: relative;
+}
+.weixin img{
+    width: 120px;
+    height: 120px; 
+    position: absolute;
+    left: 0;
+    top: -120px;
+    display: none;
+}
+.weibo img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    top: -120px;
+    display: none;
+}
+.weibo:hover img{
+    display: block;
+}
+.weixin:hover img{
+    display: block;
+}
