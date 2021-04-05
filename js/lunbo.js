@@ -1,7 +1,7 @@
 /*
  * @Author: XuCheri
  * @Date: 2021-04-02 23:23:47
- * @LastEditTime: 2021-04-03 00:13:12
+ * @LastEditTime: 2021-04-05 23:58:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Hust-edu\js\demo1.js
@@ -73,6 +73,7 @@ var oSpanArray = document.getElementsByClassName('circle')[0].getElementsByTagNa
 
                 cn = this.index;
                 move();
+                canclick = true
             }
         }
 
@@ -122,7 +123,7 @@ var oSpanArray = document.getElementsByClassName('circle')[0].getElementsByTagNa
         }
 
         //第二个解决方法，使用visibilitychange事件
-        /* document.addEventListener('visibilitychange',function(){
+        document.addEventListener('visibilitychange',function(){
             if(document.visibilityState === 'hidden' ){
                 //页面隐藏了，清除动画
                 clearInterval(timer);
@@ -130,7 +131,7 @@ var oSpanArray = document.getElementsByClassName('circle')[0].getElementsByTagNa
                //页面打开了
                timer = setInterval(next.onclick, 3000);
             }
-        }); */
+        }); 
 
     }
 
